@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sosyal Kişilik Tipi</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .social-card {
+            background-color: white;
+        }
+
+        .social-card .card-header .btn {
+            color: rgba(54, 162, 235, 1); /* Yazı rengi */
+            background-color: rgb(248,244,244); /* Arka plan rengi */
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-4" id="swg-accordian">
+    <h2>Sosyal Kişilik Tipi Meslekleri</h2>
+    <p>
+         Sosyal tipler işbirliğine önem veren, ahlaklı, sorumlu, anlayışlı ve dost canlısı olmaya yatkın kişilerdir. Kişilerarası ilişkilere değer verirler, mekanik ve bilimsel becerilerden yoksundurlar. Sosyal, eğitimsel ve iyileştirici beceriler gerektiren iş çevreleri bu kişiler için uygundur. Sözel becerileri iyidir. İnsanlarla çalışmaktan hoşlanırlar. Yardımsever ve arkadaşça olma eğilimindedirler. Bilgilendirme,  aydınlatma, öğretme, yardım etme, eğitme veya tedavi ve iyileştirmeden hoşlanırlar. Öğretmen, hemşirelik ve danışmanlık gibi etkinlikleri içeren meslekleri tercih ederler.
+
+    </p>
+
+    <ul>
+        <li>Yardımsever</li>
+        <li>Sorumluluk sahibi</li>
+        <li>Sosyal işbirliğine yatkın</li>
+        <li>Empatik</li>
+        <li>Arkadaş canlısı, içten</li>
+        <li>Sabırlı, nazik, anlayışlı</li>
+        <li>İnsanlarla birlikteliği saptayan aktiviteler</li>
+        <li>Başkalarını eğiterek geliştirmek, yardım etmek</li>
+        <li>Başkalarını ikna etme, yönlendirme</li>
+    </ul>
+
+    <div>
+       {% for meslek in ['Psikoloji', 'PDR', 'Sınıf Öğretmenliği', 'Özel Eğitim Öğretmenliği', 'Çocuk Gelişimi', 'Uluslararası İlişkiler', 'Sosyal Hizmetler', 'Tarih Öğretmenliği', 'Coğrafya Öğretmenliği', 'Sosyal Bilgiler Öğretmenliği', 'Sosyoloji', 'Felsefe', 'Hemşirelik Fakültesi'] %}
+<div class="card social-card my-3">
+    <div class="card-header" id="heading{{ loop.index }}">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}" data-parent="#swg-accordian">
+            {{ meslek }}
+        </button>
+    </div>
+    <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="heading{{ loop.index }}" data-parent="#swg-accordian">
+        <div class="card-body">
+            {% set filename = meslek.replace(' ', '') %}
+            {% include 'meslekler/' + filename + '.html' %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

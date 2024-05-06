@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Araştırmacı Kişilik Tipi Meslekleri</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .researcher-card {
+            background-color: white; /* Meslek kartlarının arka planını beyaz yap */
+        }
+
+        .researcher-card .card-header .btn {
+            color: rgba(255, 99, 132, 1); /* Meslek kartlarının başlık yazı rengini pembe yap */
+            background-color: rgb(248,244,244); /* Başlık arka plan rengini ayarla */
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-4" id="wwg-accordian">
+    <h2>Araştırmacı Kişilik Tipi Meslekleri</h2>
+    <p>Araştırmacı tipler çözümleyici, kendi düşünce ve hislerine kulak veren ve karmaşık konulara ilgi duyan kişilerdir. Bilimsel yöntemlere önem verirler, sosyal ve liderlik becerileri gelişmemiştir. Bilimsel ve matematiksel yeteneklerin ve zihinsel problem çözme becerilerinin kullanıldığı iş çevreleri bu kişilik tipine uygundur. Biyolojik ve fizik bilimlerle ilgili etkinliklerden hoşlanırlar. Matematik ve fen bilimlerinde yeteneklidirler. Bilim ve tıp alanındaki işleri tercih ederler. Bilimsel, meraklı, çalışkan ve bağımsız olma eğilimindedirler. Gözlem yapmak, öğrenmek, araştırmak, analiz etmek, değerlendirmek ve ölçmekten hoşlanırlar. Problemlere kafa yorup çözmekten hoşlanırlar.
+    </p>
+    <ul>
+        <li>Entelektüel, analitik düşünce yapısına sahip</li>
+        <li>Rasyonel, eleştirel, titiz, sabırlı, yöntemci, bağımsız, popüler olmaktan hoşlanmayan </li>
+        <li>Analitik gözlem yapma </li>
+        <li>Sistematik deneysel çalışma </li>
+        <li>Fiziksel, biyolojik ve kültürel olguları araştırma  </li>
+    </ul>
+
+    <div>
+        {% for meslek in ['Tıp Fakültesi', 'Diş Hekimliği Fakültesi', 'Genetik Mühendisliği', 'Tıp Teknisyeni', 'Kimyager', 'Matematik Mühendisliği', 'Biyolog', 'Astronot', 'Eczacılık Fakültesi', 'Kimya Mühendisliği', 'Matematik Bölümü', 'Makine Mühendisliği', 'Havacılık ve Uzay Mühendisliği', 'Elektrik Elektronik Mühendisliği', 'Endüstri Mühendisliği', 'Bilgisayar Mühendisliği', 'Yazılım Mühendisliği'] %}
+<div class="card researcher-card my-3">
+    <div class="card-header" id="heading{{ loop.index }}">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}" data-parent="#wwg-accordian">
+            {{ meslek }}
+        </button>
+    </div>
+    <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="heading{{ loop.index }}" data-parent="#wwg-accordian">
+        <div class="card-body">
+             {% set filename = meslek.replace(' ', '') %}
+             {% include 'meslekler/' + filename + '.html' %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

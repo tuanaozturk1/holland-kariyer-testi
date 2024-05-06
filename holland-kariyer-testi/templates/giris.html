@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Holland Kariyer Testi - Giriş Sayfası</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+        body {
+            background-color: #f0f0f0; /* Açık gri arkaplan */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Yüksekliği viewport'un %100'üne ayarla */
+            text-align: center;
+        }
+        .card {
+            width: 100%; /* Genişliği ekran genişliğine göre ayarla */
+            max-width: 800px; /* Maksimum genişlik */
+            margin: 20px; /* Marjin ekle */
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+        }
+        .card-body {
+            background-color: #ffffff; /* Beyaz arkaplan */
+            padding: 50px; /* İçeriğe daha fazla yer ver */
+            color: #343a40; /* Koyu gri metin */
+        }
+        h1, h5 {
+            color: #007bff; /* Mavi başlıklar */
+            padding: 0 15px; /* Mobil cihazlar için yan boşluk */
+        }
+        h5 {
+            margin-bottom: 20px; /* Metin altındaki boşluk */
+            padding: 15px; /* Metne padding ekle */
+            color: #343a40; /* Metin için koyu gri rengi düzeltilmiş */
+        }
+        @media (max-width: 576px) {
+            .container {
+                padding: 30px; /* Küçük ekranlar için daha küçük padding */
+            }
+            .card-body {
+                padding: 30px; /* Kart içeriği için daha az padding */
+            }
+            h1, h5 {
+                font-size: smaller; /* Küçük ekranlarda font boyutunu azalt */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">Hoş Geldiniz!</div>
+            <div class="card-body">
+                <h1>Holland Kariyer Testi</h1>
+                <h5>Gençler meslek seçimi hayatımızın en önemli seçimlerinden biridir. Bu uygulama sizlerin ilgi alanlarınıza uygun mesleklere ait bölümlerin hangi puanla kaç netle kazanılabileceği hakkında fikir sahibi olmanız için tasarlandı. Lütfen karşınıza çıkan anket sorularını kendi özgür iradenizle bireysel olarak kimseden fikir almadan en doğru şekilde cevaplandırınız.</h5>
+                <form action="/test" method="get">
+                    <button type="submit" class="btn btn-primary">TESTE BAŞLA</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

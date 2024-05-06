@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holland Kariyer Testi Sonuçları</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Kütüphanesi -->
+    <style>
+        .card-header {
+            color: white;
+        }
+
+        .card-header .score, .card-header .rank {
+            font-weight: bold;
+        }
+
+        #chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center my-4">Kariyer Testi Sonuçları</h1>
+    <div class="row mb-5 pb-5">
+        <div class="col-md-6">
+            <img src="/static/img.png" class="img-fluid border-0">
+        </div>
+        <div class="col-md-6" id="chart-container">
+            <canvas id="scoreChart"></canvas>
+        </div>
+    </div>
+
+    <div id="accordion">
+    {% for personality in labels %}
+    <div class="card m-4">
+        <div class="card-header" style="background-color: {{ colors[personality] }};" id="heading{{ personality }}">
+            <h5 class="mb-0">
+                <button class="btn btn-link text-white collapsed" data-toggle="collapse" data-target="#collapse{{ personality }}"
+                        aria-expanded="false" aria-controls="collapse{{ personality }}">
+                    {{ personality }}
+                </button>
+            </h5>
+        </div>
+        <div id="collapse{{ personality }}" class="collapse" aria-labelledby="heading{{ personality }}" data-parent="#accordion">
+            <div class="card-body">
+                {% include personality + '.html' %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<script>
+ var ctx = document.getElementById('scoreChart').getContext('2d');
+var scoreChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: {{ labels | tojson }},
+        datasets: [{
+            label: 'Skorlar',
+            data: {{ scores | tojson }},
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+    maintainAspectRatio: false,
+    plugins: {
+        datalabels: {
+            color: '#fff',
+            font: {
+                weight: 'bold',
+                size: 16,
+            },
+            formatter: (value, ctx) => {
+                let sum = ctx.dataset.data.reduce((a, b) => a + b, 0);
+                let percentage = (value * 100 / sum).toFixed(2) + "%";
+                return percentage;
+            }
+        }
+    }
+}
+,
+    plugins: [ChartDataLabels]
+});
+
+
+
+
+</script>
+</body>
+</html>

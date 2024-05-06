@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holland Kariyer Testi</title>
+    <!-- Bootstrap CSS ekleme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            padding-top: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .card-body {
+            background-color: #e9ecef;
+        }
+
+        .form-check-label {
+            margin-right: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            color: #007bff;
+        }
+
+        .inline-form-check .form-check {
+            display: inline-block; /* Form-check'i inline yapar */
+            margin-right: 10px; /* Aralarında boşluk sağlar */
+}
+    </style>
+<body>
+<div class="container inline-form-check">
+    <h1>Holland Kariyer Testi</h1>
+    <form action="/submit" method="post">
+        <!-- 1. Soru Kartı -->
+        <div class="card">
+            <div class="card-header">
+                1. Kuşların nasıl göç ettiğini öğrenmek ister misiniz?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="question1_like" value="like">
+                    <label class="form-check-label" for="question1_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="question1_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question1_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="question1_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question1_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                2. İnsanlara yeni bir hobi öğretmekten hoşlanır mısınız?
+            </div>
+            <div class="card-body">
+                <div class="form-check ">
+                    <input class="form-check-input" type="radio" name="question2" id="question2_like" value="like">
+                    <label class="form-check-label" for="question2_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" id="question2_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question2_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" id="question2_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question2_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                3. Hava durumu tahmini için kişisel gözlemleri kullanmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" id="question3_like" value="like">
+                    <label class="form-check-label" for="question3_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" id="question3_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question3_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" id="question3_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question3_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                4. Bitki hastalıklarını incelemek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="question4_like" value="like">
+                    <label class="form-check-label" for="question4_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="question4_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question4_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="question4_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question4_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                5. Bankaya yatırılan paranın faizini hesaplamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="question5_like" value="like">
+                    <label class="form-check-label" for="question5_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="question5_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question5_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="question5_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question5_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                6. Resimler tasarlamak ve çizmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="question6_like" value="like">
+                    <label class="form-check-label" for="question6_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="question6_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question6_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="question6_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question6_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                7. Bir iş yaptırmak için parayla adam tutmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="question7_like" value="like">
+                    <label class="form-check-label" for="question7_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="question7_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question7_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="question7_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question7_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                8. Bir bilim müzesini incelemek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question8" id="question8_like" value="like">
+                    <label class="form-check-label" for="question8_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question8" id="question8_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question8_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question8" id="question8_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question8_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                9. Gözlük için mercekleri parlatmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question9" id="question9_like" value="like">
+                    <label class="form-check-label" for="question9_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question9" id="question9_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question9_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question9" id="question9_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question9_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                10. Modern yazarların yazı stillerini araştırmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question10" id="question10_like" value="like">
+                    <label class="form-check-label" for="question10_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question10" id="question10_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question10_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question10" id="question10_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question10_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                11. Mikroskop gibi laboratuar aletlerini kullanmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question11" id="question11_like" value="like">
+                    <label class="form-check-label" for="question11_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question11" id="question11_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question11_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question11" id="question11_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question11_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                12. Bir dükkanda envanter tutmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question12" id="question12_like" value="like">
+                    <label class="form-check-label" for="question12_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question12" id="question12_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question12_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question12" id="question12_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question12_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                13. Bir kuş yemliği tasarlamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question13" id="question13_like" value="like">
+                    <label class="form-check-label" for="question13_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question13" id="question13_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question13_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question13" id="question13_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question13_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                14. Bir oyun için takım oluşturma hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question14" id="question14_like" value="like">
+                    <label class="form-check-label" for="question14_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question14" id="question14_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question14_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question14" id="question14_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question14_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                15. Yeni bir satış kampanyası düzenlemek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question15" id="question15_like" value="like">
+                    <label class="form-check-label" for="question15_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question15" id="question15_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question15_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question15" id="question15_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question15_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                16. Bir toplantıyı yönetmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question16" id="question16_like" value="like">
+                    <label class="form-check-label" for="question16_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question16" id="question16_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question16_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question16" id="question16_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question16_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                17. Vitaminlerin hayvanlar üzerindeki etkisini araştırmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question17" id="question17_like" value="like">
+                    <label class="form-check-label" for="question17_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question17" id="question17_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question17_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question17" id="question17_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question17_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                18. Küçük bir işletmeyi idare etmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question18" id="question18_like" value="like">
+                    <label class="form-check-label" for="question18_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question18" id="question18_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question18_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question18" id="question18_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question18_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                19. Bir makinenin nasıl kullanılacağı konusunda talimatlar yazmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question19" id="question19_like" value="like">
+                    <label class="form-check-label" for="question19_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question19" id="question19_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question19_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question19" id="question19_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question19_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                20. Diğer insanlar için iş planlamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question20" id="question20_like" value="like">
+                    <label class="form-check-label" for="question20_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question20" id="question20_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question20_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question20" id="question20_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question20_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                21. Küçük grup tartışmalarına katılmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question21" id="question21_like" value="like">
+                    <label class="form-check-label" for="question21_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question21" id="question21_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question21_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question21" id="question21_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question21_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                22. Yeni bir cerrahi işlem hakkında yazılar okumak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question22" id="question22_like" value="like">
+                    <label class="form-check-label" for="question22_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question22" id="question22_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question22_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question22" id="question22_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question22_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                23. Mali bir hesaptaki hataları bulmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question23" id="question23_like" value="like">
+                    <label class="form-check-label" for="question23_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question23" id="question23_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question23_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question23" id="question23_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question23_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                24. Bir rapor taslağındaki hataları bulmak ve incelemek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question24" id="question24_like" value="like">
+                    <label class="form-check-label" for="question24_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question24" id="question24_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question24_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question24" id="question24_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question24_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                25. Planlar ve grafikler yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question25" id="question25_like" value="like">
+                    <label class="form-check-label" for="question25_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question25" id="question25_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question25_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question25" id="question25_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question25_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                26. Fırtınadan sonra zarar görmüş bir ağacı onarmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question26" id="question26_like" value="like">
+                    <label class="form-check-label" for="question26_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question26" id="question26_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question26_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question26" id="question26_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question26_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                27. Kusurları bulmak için mamulleri incelemek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question27" id="question27_like" value="like">
+                    <label class="form-check-label" for="question27_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question27" id="question27_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question27_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question27" id="question27_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question27_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                28. Telefonla iş idare etmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question28" id="question28_like" value="like">
+                    <label class="form-check-label" for="question28_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question28" id="question28_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question28_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question28" id="question28_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question28_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                29. Acil durumlarda insanlara yardım etmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question29" id="question29_like" value="like">
+                    <label class="form-check-label" for="question29_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question29" id="question29_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question29_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question29" id="question29_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question29_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                30. Bir kuruluşun parayla ilgili bütün işlerini idare etmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question30" id="question30_like" value="like">
+                    <label class="form-check-label" for="question30_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question30" id="question30_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question30_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question30" id="question30_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question30_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                31. Müzik eseri bestelemek veya düzenlemek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question31" id="question31_like" value="like">
+                    <label class="form-check-label" for="question31_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question31" id="question31_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question31_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question31" id="question31_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question31_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                32. Filmler için konu müziği bestelemek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question32" id="question32_like" value="like">
+                    <label class="form-check-label" for="question32_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question32" id="question32_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question32_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question32" id="question32_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question32_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                33. Yeni kurallar veya politikalar geliştirmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question33" id="question33_like" value="like">
+                    <label class="form-check-label" for="question33_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question33" id="question33_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question33_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question33" id="question33_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question33_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                34. Biyoloji çalışmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question34" id="question34_like" value="like">
+                    <label class="form-check-label" for="question34_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question34" id="question34_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question34_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question34" id="question34_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question34_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                35. Bir politik kurum için kampanyaya katılmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question35" id="question35_like" value="like">
+                    <label class="form-check-label" for="question35_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question35" id="question35_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question35_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question35" id="question35_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question35_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                36. Maddeleri ayırmak, biriktirmek ve saklamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question36" id="question36_like" value="like">
+                    <label class="form-check-label" for="question36_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question36" id="question36_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question36_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question36" id="question36_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question36_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                37. Bir toplum geliştirme projesinde çalışmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question37" id="question37_like" value="like">
+                    <label class="form-check-label" for="question37_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question37" id="question37_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question37_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question37" id="question37_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question37_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                38. Bir daktilonun nasıl tamir edileceğini öğrenmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question38" id="question38_like" value="like">
+                    <label class="form-check-label" for="question38_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question38" id="question38_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question38_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question38" id="question38_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question38_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                39. Dünyanın merkezi, güneş ve yıldızlar hakkında kitaplar okumak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question39" id="question39_like" value="like">
+                    <label class="form-check-label" for="question39_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question39" id="question39_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question39_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question39" id="question39_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question39_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                40. Tam doğru zaman tutmak için bir saati ayarlamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question40" id="question40_like" value="like">
+                    <label class="form-check-label" for="question40_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question40" id="question40_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question40_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question40" id="question40_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question40_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                41. Beynin nasıl çalıştığını öğrenmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question41" id="question41_like" value="like">
+                    <label class="form-check-label" for="question41_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question41" id="question41_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question41_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question41" id="question41_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question41_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                42. Yaratıcı fotoğraflar çekmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question42" id="question42_like" value="like">
+                    <label class="form-check-label" for="question42_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question42" id="question42_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question42_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question42" id="question42_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question42_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                43. Masraflara ait hesap kayıtları tutmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question43" id="question43_like" value="like">
+                    <label class="form-check-label" for="question43_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question43" id="question43_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question43_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question43" id="question43_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question43_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                44. Bir bandoda çalmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question44" id="question44_like" value="like">
+                    <label class="form-check-label" for="question44_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question44" id="question44_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question44_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question44" id="question44_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question44_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                45. Bir orkestrada caz müziği çalmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question45" id="question45_like" value="like">
+                    <label class="form-check-label" for="question45_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question45" id="question45_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question45_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question45" id="question45_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question45_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                46. Bir grup veya klüp için bütçe hazırlamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question46" id="question46_like" value="like">
+                    <label class="form-check-label" for="question46_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question46" id="question46_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question46_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question46" id="question46_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question46_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                47. Depremin nedenlerini araştırmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question47" id="question47_like" value="like">
+                    <label class="form-check-label" for="question47_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question47" id="question47_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question47_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question47" id="question47_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question47_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                48. Ünlü bir bilim adamının dersine katılmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question48" id="question48_like" value="like">
+                    <label class="form-check-label" for="question48_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question48" id="question48_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question48_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question48" id="question48_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question48_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                49. Bir proje üzerinde başkaları ile beraber çalışmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question49" id="question49_like" value="like">
+                    <label class="form-check-label" for="question49_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question49" id="question49_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question49_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question49" id="question49_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question49_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                50. Bir sinema filmi senaryosu yazmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question50" id="question50_like" value="like">
+                    <label class="form-check-label" for="question50_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question50" id="question50_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question50_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question50" id="question50_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question50_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                51. Şirket hakkındaki şikayetleri konusunda işçilerle röportaj yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question51" id="question51_like" value="like">
+                    <label class="form-check-label" for="question51_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question51" id="question51_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question51_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question51" id="question51_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question51_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                52. Mobilya yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question52" id="question52_like" value="like">
+                    <label class="form-check-label" for="question52_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question52" id="question52_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question52_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question52" id="question52_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question52_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                53. Değerli taşları kesmeyi ve parlatmayı öğrenmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question53" id="question53_like" value="like">
+                    <label class="form-check-label" for="question53_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question53" id="question53_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question53_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question53" id="question53_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question53_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                54. Yaralı bir insana ilkyardım yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question54" id="question54_like" value="like">
+                    <label class="form-check-label" for="question54_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question54" id="question54_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question54_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question54" id="question54_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question54_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                55. Yerel bir radyo istasyonunda çalınması için müzik parçaları seçmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question55" id="question55_like" value="like">
+                    <label class="form-check-label" for="question55_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question55" id="question55_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question55_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question55" id="question55_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question55_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                56. İl genel meclisinde çalışmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question56" id="question56_like" value="like">
+                    <label class="form-check-label" for="question56_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question56" id="question56_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question56_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question56" id="question56_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question56_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                57. Mali raporları hazırlamak ve yorumlamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question57" id="question57_like" value="like">
+                    <label class="form-check-label" for="question57_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question57" id="question57_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question57_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question57" id="question57_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question57_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                58. Tehlikedeki bir insana yardım etmeye çalışmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question58" id="question58_like" value="like">
+                    <label class="form-check-label" for="question58_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question58" id="question58_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question58_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question58" id="question58_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question58_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                59. Elektronik alet çalıştırmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question59" id="question59_like" value="like">
+                    <label class="form-check-label" for="question59_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question59" id="question59_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question59_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question59" id="question59_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question59_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                60. Çocuklara nasıl oyun oynanacağını veya spor yapılacağını göstermek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question60" id="question60_like" value="like">
+                    <label class="form-check-label" for="question60_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question60" id="question60_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question60_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question60" id="question60_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question60_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                61. Bir ustayı televizyon tamir ederken seyretmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question61" id="question61_like" value="like">
+                    <label class="form-check-label" for="question61_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question61" id="question61_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question61_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question61" id="question61_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question61_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                62. Bir magazin hikayesini anlatan çizimler yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question62" id="question62_like" value="like">
+                    <label class="form-check-label" for="question62_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question62" id="question62_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question62_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question62" id="question62_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question62_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                63. Ziyaretçilere yol göstermek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question63" id="question63_like" value="like">
+                    <label class="form-check-label" for="question63_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question63" id="question63_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question63_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question63" id="question63_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question63_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                64. Diğer insanların bir problemin çözülebileceğine nasıl inandıklarını öğrenmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question64" id="question64_like" value="like">
+                    <label class="form-check-label" for="question64_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question64" id="question64_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question64_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question64" id="question64_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question64_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                65. Bir sergiye gezi düzenlemek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question65" id="question65_like" value="like">
+                    <label class="form-check-label" for="question65_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question65" id="question65_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question65_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question65" id="question65_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question65_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                66. Uyuşturucu kullanan insanlara danışmanlık yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question66" id="question66_like" value="like">
+                    <label class="form-check-label" for="question66_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question66" id="question66_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question66_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question66" id="question66_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question66_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                67. İş gazeteleri veya dergileri okumak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question67" id="question67_like" value="like">
+                    <label class="form-check-label" for="question67_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question67" id="question67_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question67_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question67" id="question67_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question67_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                68. Yıldızların oluşumunu öğrenmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question68" id="question68_like" value="like">
+                    <label class="form-check-label" for="question68_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question68" id="question68_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question68_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question68" id="question68_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question68_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                69. Taksit ödemelerini tahsil etmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question69" id="question69_like" value="like">
+                    <label class="form-check-label" for="question69_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question69" id="question69_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question69_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question69" id="question69_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question69_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                70. Bir slayt veya film projektörünü çalıştırmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question70" id="question70_like" value="like">
+                    <label class="form-check-label" for="question70_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question70" id="question70_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question70_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question70" id="question70_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question70_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                71. Kelebekleri gözlemlemek ve sınıflandırmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question71" id="question71_like" value="like">
+                    <label class="form-check-label" for="question71_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question71" id="question71_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question71_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question71" id="question71_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question71_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                72. Metal bir heykel tasarlamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question72" id="question72_like" value="like">
+                    <label class="form-check-label" for="question72_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question72" id="question72_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question72_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question72" id="question72_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question72_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                73. İnsanlara kanuni doğruları açıklamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question73" id="question73_like" value="like">
+                    <label class="form-check-label" for="question73_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question73" id="question73_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question73_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question73" id="question73_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question73_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                74. Kısa hikayeler yazmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question74" id="question74_like" value="like">
+                    <label class="form-check-label" for="question74_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question74" id="question74_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question74_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question74" id="question74_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question74_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                75. İnsanların mali kararlar vermelerine yardımcı olmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question75" id="question75_like" value="like">
+                    <label class="form-check-label" for="question75_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question75" id="question75_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question75_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question75" id="question75_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question75_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                76. Gelir vergisi kazancını düzenlemek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question76" id="question76_like" value="like">
+                    <label class="form-check-label" for="question76_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question76" id="question76_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question76_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question76" id="question76_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question76_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                77. Sertifika, plaket veya taktir belgesi kazanmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question77" id="question77_like" value="like">
+                    <label class="form-check-label" for="question77_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question77" id="question77_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question77_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question77" id="question77_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question77_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                78. Tiyatro oyunu, müzikaller gibi sanatsal etkinliklerin eleştirilerini yazmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question78" id="question78_like" value="like">
+                    <label class="form-check-label" for="question78_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question78" id="question78_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question78_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question78" id="question78_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question78_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                79. Aylık bütçe planı yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question79" id="question79_like" value="like">
+                    <label class="form-check-label" for="question79_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question79" id="question79_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question79_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question79" id="question79_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question79_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                80. Bir havuz veya gölde yabani hayatı araştırmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question80" id="question80_like" value="like">
+                    <label class="form-check-label" for="question80_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question80" id="question80_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question80_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question80" id="question80_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question80_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                81. Bir tiyatro oyununda rol almak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question81" id="question81_like" value="like">
+                    <label class="form-check-label" for="question81_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question81" id="question81_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question81_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question81" id="question81_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question81_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                82. Bir resim çerçevesi yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question82" id="question82_like" value="like">
+                    <label class="form-check-label" for="question82_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question82" id="question82_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question82_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question82" id="question82_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question82_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                83. İş gezilerine çıkmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question83" id="question83_like" value="like">
+                    <label class="form-check-label" for="question83_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question83" id="question83_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question83_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question83" id="question83_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question83_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                84. Orman yangınları için gözetleme yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question84" id="question84_like" value="like">
+                    <label class="form-check-label" for="question84_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question84" id="question84_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question84_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question84" id="question84_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question84_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                85. Yeni alışveriş merkezinin tanıtımını yapmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question85" id="question85_like" value="like">
+                    <label class="form-check-label" for="question85_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question85" id="question85_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question85_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question85" id="question85_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question85_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                86. Bir muhasebecilik sistemi kurmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question86" id="question86_like" value="like">
+                    <label class="form-check-label" for="question86_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question86" id="question86_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question86_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question86" id="question86_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question86_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                87. Arkadaşlar arasındaki bir tartışmayı yatıştırmak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question87" id="question87_like" value="like">
+                    <label class="form-check-label" for="question87_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question87" id="question87_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question87_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question87" id="question87_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question87_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                88. Birine önemli bir karar vermesinde yardım etmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question88" id="question88_like" value="like">
+                    <label class="form-check-label" for="question88_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question88" id="question88_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question88_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question88" id="question88_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question88_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                89. Taşıma için nakil maliyetlerini hesaplamak hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question89" id="question89_like" value="like">
+                    <label class="form-check-label" for="question89_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question89" id="question89_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question89_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question89" id="question89_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question89_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                90. Fıkralar ve hikayeler anlatarak insanları eğlendirmek hoşunuza gider mi?
+            </div>
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question90" id="question90_like" value="like">
+                    <label class="form-check-label" for="question90_like">Hoşlanırım</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question90" id="question90_neutral"
+                           value="neutral">
+                    <label class="form-check-label" for="question90_neutral">Farketmez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question90" id="question90_dislike"
+                           value="dislike">
+                    <label class="form-check-label" for="question90_dislike">Hoşlanmam</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Cevapları Gönder</button>
+        </div>
+    </form>
+</div>
+
+<!-- Bootstrap JS ve bağımlılıkları ekleme -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/umd.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
